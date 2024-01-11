@@ -4,18 +4,73 @@ body {
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: 20px 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
+}
+.img-responsive {
+  max-width: 70%;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+  width: 400px;
+}
+.card-header img {
+  width: 200px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 100px;
+}
+
+.secondary {
+  background: lightgray;
+}
+
+.secondary h3 {
+  color: black;
 }
 
 header {
@@ -60,16 +115,56 @@ header a {
   padding: 16px 32px;
 }
 
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  color: blue;
+  margin: 0;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+}
 footer {
-  color: lightgray;
+  color: whitesmoke;
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
+      rgba(39, 32, 68, 0.5),
+      rgba(39, 32, 68, 0.5)
     ),
     url("../images/athenssea.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -84,8 +179,6 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  opacity: 0.7;
-  margin-right: 20px;
 }
 
 footer li {
@@ -95,7 +188,6 @@ footer li {
 }
 footer a {
   color: white;
-  opacity: 0.7;
 }
 
 @media (max-width: 960px) {
@@ -112,5 +204,14 @@ footer a {
   }
   header h3 {
     font-size: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
