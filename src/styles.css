@@ -87,6 +87,10 @@ section {
   color: black;
 }
 
+.gallery {
+  text-align: center;
+}
+
 header {
   background-image: url("../images/Acropolis.jpg");
   background-repeat: no-repeat;
